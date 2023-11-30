@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <p>
+        <button>Click inner button</button>
+      </p>
+    </div>
+    <button id="myBtn">Click</button>
+
+    <script>
+      const divClick = () => {
+        console.log('div clicked');
+      };
+
+      const btnClick = (event) => {
+        console.log('btn clicked');
+      };
+
+      const pClick = (event) => {
+        console.log('p clicked');
+        event.stopPropagation();
+      };
+
+      const btn = document.getElementsByTagName('button')[0];
+      const div = document.getElementsByTagName('div')[0];
+      const p = document.getElementsByTagName('p')[0];
+
+      btn.addEventListener('click', btnClick);
+      div.addEventListener('click', divClick);
+      p.addEventListener('click', pClick);
+
+      // event capturing
+      // event bubbling
+      // class
+    </script>
+  </body>
+</html>
