@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="styles.css" type="text/css"
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 style="text-align: left; margin-right: 5em">Calculator</h1>
+      <div class="Calculator">
+        <form>
+          <div class="display" id="displayValue"></div>
+          <div>
+            <input type="button" value="AC" onclick="allClear()" class="operator all-clear" />
+            <!-- <input type="button" value="DC" onclick="" class="operator" /> -->
+            <input type="button" value="." onclick="" class="operator" />
+            <input type="button" value="/" onclick="updateOperation('/')" class="operator" />
+          </div>
+          <div>
+            <input type="button" value="7" onclick="onNumberClick('7')" />
+            <input type="button" value="8" onclick="onNumberClick('8')" />
+            <input type="button" value="9" onclick="onNumberClick('9')" />
+            <input type="button" value="*" onclick="updateOperation('*')" class="operator" />
+          </div>
+          <div>
+            <input type="button" value="4" onclick="onNumberClick('4')" />
+            <input type="button" value="5" onclick="onNumberClick('5')" />
+            <input type="button" value="6" onclick="onNumberClick('6')" />
+            <input type="button" value="-" onclick="updateOperation('-')" class="operator" />
+          </div>
+          <div>
+            <input type="button" value="1" onclick="onNumberClick('1')" />
+            <input type="button" value="2" onclick="onNumberClick('2')" />
+            <input type="button" value="3" onclick="onNumberClick('3')" />
+            <input type="button" value="+" onclick="updateOperation('+')" class="operator" />
+          </div>
+          <div>
+            <input type="button" value="00" onclick="onNumberClick('00')" />
+            <input type="button" value="0" onclick="onNumberClick('0')" />
+            <input type="button" value="=" class="equal operator" onclick="calculate()" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
