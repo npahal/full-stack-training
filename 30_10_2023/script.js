@@ -92,5 +92,4 @@ function returnSumOfTwoVariables() {
   return num + num2;
 }
 
-
 var num3 = returnSumOfTwoVariables(); // function calling syntax
