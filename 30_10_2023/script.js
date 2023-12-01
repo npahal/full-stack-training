@@ -94,8 +94,3 @@ function returnSumOfTwoVariables() {
 
 
 var num3 = returnSumOfTwoVariables(); // function calling syntax
-
-function newFunction() {
-  // code
-  // this is new function to test git revert
-}
